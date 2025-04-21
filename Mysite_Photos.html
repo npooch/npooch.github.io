@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nick Puccinelli's Site - Photos</title>
+<link rel="stylesheet" href="MeWeb.css">
+<script language="Javascript" src="Mysite.js"></script>
+</head>
+<body>
+<div class="topper">
+    <img src="Images/NPLogo.png">
+    <h1>Nick Puccinelli's Website</h1>
+
+<ul>
+    <li><a href="../Testeroo.html">Home</a></li>
+    <li id="selected"><a href="#photos">Photos</a></li>
+    <li><a href="Mysite_Videos.html">Videos</a></li>
+    <li><a href="Mysite_About.html">About</a></li>
+</ul>
+</div>
+<div id="content">
+        <img class="photo" src="Images/Multilook1.jpg" onclick="popPics(src)">
+        <img class="photo" src="Images/Multilook2.jpg" onclick="popPics(src)">
+        <img class="photo" src="Images/Multilook3.jpg" onclick="popPics(src)">
+        <img class="photo" src="Images/Multilook4.jpg" onclick="popPics(src)">
+</div>
+
+<div id="popped" onclick="closePics()">
+    <img>
+    <p>x</p>
+</div>
+
+<div id="foot">
+    <hr>
+    <p>Nick Puccinelli &copy; 2022-2023</p>
+</div>
+</body>
+</html>

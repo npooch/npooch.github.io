@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tic Tac Toe</title>
+		<link rel="stylesheet" href="TicTacToe.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Galindo&display=swap" rel="stylesheet" />
+	</head>
+	<body>
+	   
+		<h1>Tic Tac Toe - Version 1.0</h1>
+		<hr>
+		<br>
+		<center>
+		    <div id="welcome" class="menu">
+		        <h1>Welcome to Tic Tac Toe!</h1>
+		        <h2>- Select Number of Players -</h2>
+		        <button class="player_count" onclick="startGame(1)">1</button>
+		        <button class="player_count" onclick="startGame(2)">2</button>
+		    </div>
+		    <div id="select_dif" class="menu">
+		        <h1>Welcome to Tic Tac Toe!</h1>
+		        <h2>- Select a Difficulty -</h2>
+		        <button onclick="setDifficulty('0')">Easy</button>
+		        <button onclick="setDifficulty('1')">Medium</button>
+		        <button onclick="setDifficulty('2')">Hard</button>
+		        <br>
+		        <button onclick="goBack()" style="margin-top:200px">Go Back</button>
+		    </div>
+		    <!--div id="obscure"></div-->
+		    <div id="game_over">
+		    </div>
+		    <h2 id="name_winner">It is now X's turn</h2>
+		    <div id="board">
+                <table class="markers">
+                    <tr class="row_top">
+                        <td id="0" onclick="turnCheck(this.id)"><div></div></td>
+                        <td id="1" onclick="turnCheck(this.id)"><div></div></td>
+                        <td id="2" onclick="turnCheck(this.id)"><div></div></td>
+                    </tr>
+                    <tr class="row_top">
+                        <td id="3" onclick="turnCheck(this.id)"><div></div></td>
+                        <td id="4" onclick="turnCheck(this.id)"><div></div></td>
+                        <td id="5" onclick="turnCheck(this.id)"><div></div></td>
+                    </tr>
+                    <tr class="row_bottom">
+                        <td id="6" onclick="turnCheck(this.id)"><div></div></td>
+                        <td id="7" onclick="turnCheck(this.id)"><div></div></td>
+                        <td id="8" onclick="turnCheck(this.id)"><div></div></td>
+                    </tr>
+                </table>
+		    </div>
+		    <br><br>
+		    
+		    <button id="under_board" onclick="compChoice(0)">RANDOM</button>
+		    <!--Add turn indicator, inform X goes first-->
+		</center>
+	    <script src="TicTacToe.js"></script>
+	</body>
+</html>

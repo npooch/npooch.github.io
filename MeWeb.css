@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css?family=Satisfy");
+
+@import url("https://fonts.googleapis.com/css?family=Rubik");
+
+body {
+    /*Note: File path to images is relative to current file*/
+    background-image: url("Images/CowellSp_blur.jpg");
+    /*background-image: linear-gradient(white,lemonchiffon);*/
+    background-size:100vw 100vh;
+    background-attachment:fixed;
+}
+
+.topper {
+    background-color:#273776;
+    position:fixed;
+    z-index:2;
+    left:0px;
+    top:0px;
+    width:100vw;
+    height:80px;
+    align-items:center;
+    display: flex;
+    border-bottom:5px solid gold;
+    box-shadow:5px 5px 5px black;
+}
+
+.topper img {
+    width:auto; 
+    height:90%; 
+    border-radius:0px 50px 50px 0px;
+    border:3px solid #A43E37;
+    background-color:#A43E37;
+    padding-right:5px;
+}
+
+.topper h1 {
+    width:40vw;
+    height:auto;
+    margin-left:5vw;
+    font-family:Satisfy;
+    color:white;
+    text-decoration:italic;
+    /*transform:rotate(-5deg);*/
+}
+
+.topper ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    position:absolute;
+    width:50vw;
+    height:100%;
+    top:-16px;
+    left:50vw;;
+    z-index:3;
+    background-color:#273776;
+}
+
+.topper li {
+    display:flex;
+    float: left;
+    position:relative;
+    top:50%;
+    width:25%;
+    height:50%;
+    /*border:1px solid gold;*/
+    /*background-color:#273776;*/
+    background-color:#A43E37;
+    text-align: center;
+    border-radius:25px 25px 0px 0px;
+}
+
+.topper li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-family:Rubik;
+  padding-top:6%;
+  margin:auto;
+  height:100%;
+  width:100%;
+}
+
+/*.topper li a:hover:after {
+  content:""; 
+  float:left; 
+  background:white; 
+  width:100%; 
+  height:6px; 
+  border-radius: 3px;
+}
+}*/
+
+.topper li:hover {
+    top:33%;
+    height:67%;
+}
+
+#foot {
+    font-family:Rubik;
+	color:white;
+	width:100vw;
+	height:100%;
+	background: rgba(127, 127, 127, 0.65);
+	position: relative;
+	left:-10px;
+	bottom: -10px;
+	/*padding-top: 100%;*/
+}
+
+#foot p {
+    padding-left:20px;
+}
+
+/*#selected {
+    background-color: #1D2750;
+}*/
+
+#content {
+    margin-top:100px;
+    text-align:center;
+}
+
+#content p {
+    font-family:Arial;
+    color: Black;
+    text-align:center;
+    font-size:24pt;
+    margin:auto;
+    width:400px;
+    height:400px;
+    border:3px solid white;
+    padding:20px;
+    background-color: rgba(230,230,230,0.75);
+}
+
+#popped {
+    width:100vw;
+    height:100%;
+    background-color:rgba(127, 127, 127, 0.9);
+    margin:auto;
+    position:fixed;
+    top:0px;
+    left:0px;
+    z-index:0;
+    display:none;
+    text-align:center;
+    color:white;
+    font-family:Rubik;
+    font-size:18pt;
+}
+
+#popped img{
+    padding-top:20vh;
+    width:60vw;
+    height:auto;
+}
+
+.photo {
+    margin:auto;
+    width:33vw;
+    height:auto;
+    border: 1px solid white;
+    padding:10px;
+    cursor:pointer;
+}
+
+.schedule {
+    position: absolute;
+    right: 0px;
+    top: 85px;
+}
+.schedule ul {
+    margin:auto;
+    width:300px;
+    height: auto;
+    color: #000000;
+    list-style: none;
+    font-family: sans-serif;
+}
+.schedule li {
+    width:100%;
+    height:40px;
+    border: 1px solid gray;
+    border-radius: 15px 0 0 15px;
+    padding-left: 10px;
+    display: flex;
+}
+
+.schedule li:hover {
+        width: 500px;
+    }
+
+.schedule li:not(.W) {
+    background-color: #FFFFFFAB;
+}
+
+.schedule li p {
+    margin: auto 10px;
+}
+
+.schedule li p {
+    margin: auto 10px;
+}
+
+.schedule span {
+   justify-content: flex-end;
+   /*display: flex;*/
+ 
+}
+
+.nfl-logo {
+    width:auto;
+    height:100%;
+}
+
+.W {
+    background-color: rgba(0,255,0,0.67);
+}
+
+.loss {
+    background-color: rgba(255,0,0,0.67);
+}
+
+.game {
+    background-color: rgba(255, 255, 255, 0.67);
+}
