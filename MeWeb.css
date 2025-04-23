@@ -4,7 +4,7 @@
 
 body {
     /*Note: File path to images is relative to current file*/
-    background-image: url("images/CowellSp_blur.jpg");
+    background-image: url("../images/CowellSp_blur.jpg");
     /*background-image: linear-gradient(white,lemonchiffon);*/
     background-size:100vw 100vh;
     background-attachment:fixed;
